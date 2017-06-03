@@ -1,20 +1,21 @@
 parameters:
     #### Environment independant parameters. Same values in dev, staging, prod environments  ####
     #Site general infos
-    cocorico.site_name: Cocorico
-    cocorico.phone: +33(0) 1 43 79 86 30
-    cocorico.address: 67 rue de Provence, 75009
-    cocorico.short_description: 'Cocorico is collaborative consumption platform'
-    cocorico.contact_mail: contact@cocorico.io
+    cocorico.site_name: PowerMarket
+    cocorico.phone: 21 2143-5054
+    cocorico.address: Rua Visconde de Pirajá, Número 550, Loja 314 - Ipanema
+    cocorico.short_description: 'Alugue, Compre e venda seu vestido de festa'
+    cocorico.contact_mail: powermarket@powerlook.com.br
     #To obfuscate see http://wbwip.com/wbw/emailencoder.html
-    cocorico.contact_mail_obfuscated: "&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#099;&#111;&#099;&#111;&#114;&#105;&#099;&#111;&#046;&#105;&#111;"
-    cocorico.from_email: no-reply@cocorico.io
-    cocorico.webmaster_email: webmaster@cocorico.io
-    cocorico.vat_number: FR 12 123 456 789
+    cocorico.contact_mail_obfuscated: "&#112;&#111;&#119;&#101;&#114;&#109;&#097;&#114;&#107;&#101;&#116;&#064;&#112;&#111;&#119;&#101;&#114;&#108;&#111;&#111;&#107;&#046;&#099;&#111;&#109;&#046;&#098;&#114;"
+    cocorico.from_email: no-reply@powerlook.com.br
+    cocorico.webmaster_email: webmaster@powerlook.com.br
+    cocorico.vat_number: 14.311.585/0001.75
+
 
     #Languages
     #For knp translatable
-    locale: en
+    locale: br
 
     cocorico.locale: en
     cocorico.locales:
@@ -26,22 +27,10 @@ parameters:
     cocorico.currencies_for_lexik:
         - EUR
         - USD
-        - GBP
-        - CHF
-        - CAD
-        - JPY
-        - RUB
-        - AUD
     cocorico.currencies:
         EUR: €
         USD: $
-        GBP: £
-        CHF: CHF
-        CAD: $ CAD
-        JPY: ¥
-        RUB: руб
-        AUD: $ AUD
-    cocorico.currencies_string: EUR|USD|GBP|CHF|CAD|JPY|RUB|RUB|AUD
+    cocorico.currencies_string: EUR|USD
     cocorico.currencies_json: %kernel.root_dir%/../web/json/currencies.json
 
     #Does VAT is included in prices fixing
