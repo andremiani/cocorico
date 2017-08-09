@@ -18,7 +18,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Validator\Constraints\NotBlank;
-use Symfony\Component\Validator\Constraints\True;
+use Symfony\Component\Validator\Constraints\IsTrue;
 
 class BookingEditType extends AbstractType implements TranslationContainerInterface
 {
@@ -39,7 +39,7 @@ class BookingEditType extends AbstractType implements TranslationContainerInterf
                 array(
                     'label' => 'booking.form.tac',
                     'mapped' => false,
-                    'constraints' => new True(
+                    'constraints' => new IsTrue(
                         array(
                             "message" => self::$tacError
                         )

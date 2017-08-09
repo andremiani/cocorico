@@ -17,13 +17,12 @@ parameters:
     #For knp translatable
     locale: br
 
-    cocorico.locale: en
+    cocorico.locale: br
     cocorico.locales:
-            - en
-            - fr
-    cocorico.locales_string: en|fr
+            - br
+    cocorico.locales_string: br
     #Currencies
-    cocorico.currency: EUR
+    cocorico.currency: USD
     cocorico.currencies_for_lexik:
         - EUR
         - USD
@@ -34,9 +33,9 @@ parameters:
     cocorico.currencies_json: %kernel.root_dir%/../web/json/currencies.json
 
     #Does VAT is included in prices fixing
-    cocorico.include_vat: true
+    cocorico.include_vat: false
     #Does the include/exclude tax is displayed
-    cocorico.display_vat: true
+    cocorico.display_vat: false
 
     #VAT in percent
     cocorico.vat: 0.2
@@ -49,7 +48,7 @@ parameters:
     cocorico.fee_as_offerer: 0.05
 
     #Time unit in minute
-    cocorico.time_unit: 60
+    cocorico.time_unit: day
 
     #Is there a day flexibility for search. 0 For no else max days flexibility
     cocorico.time_unit_flexibility: 0
@@ -70,7 +69,7 @@ parameters:
     cocorico.days_max: 360
 
     #Max availabilities edition days number
-    cocorico.days_max_edition: 180
+    cocorico.days_max_edition: 120
 
     #Max search, booking time unit number.
     #Min 1. Max value of times max depends on time unit: 24 if time unit is hour. Not needed if time unit is day.
@@ -91,7 +90,7 @@ parameters:
     cocorico.listing_countries: ~
 
     cocorico.listing_favorite_countries:
-        - FR
+        - BR
 
     #Categories
     cocorico.listing_category_min: 1
@@ -140,7 +139,7 @@ parameters:
     #Or Number of days to add to the current date to consider start date as valid
     #Ex : 0 -> the booking can be requested and start the current day
     #     1 -> the booking can be requested at least one day before it start.
-    cocorico.booking.min_start_delay: 0
+    cocorico.booking.min_start_delay: 2
 
     #Minimum hours between booking request and booking starting time
     #Or Number of hours to add to the current time to consider start time as valid
@@ -186,7 +185,7 @@ parameters:
     #Max/Min images by user
     cocorico.user_img_min: 1
     cocorico.user_img_max: 6
-    cocorico.user_img_max_upload_size: 12 #MB
+    cocorico.user_img_max_upload_size: 3 #MB
 
     #User images sizes (px)
     cocorico.user_img_xsmall_w: 60
@@ -203,8 +202,8 @@ parameters:
     #Listing
     #Max/Min images by listing
     cocorico.listing_img_min: 1
-    cocorico.listing_img_max: 24
-    cocorico.listing_img_max_upload_size: 12 #MB
+    cocorico.listing_img_max: 5
+    cocorico.listing_img_max_upload_size: 3 #MB
 
     #Listing images sizes (px)
     cocorico.listing_img_xsmall_w: 90

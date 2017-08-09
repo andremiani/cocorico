@@ -31,7 +31,7 @@ use Symfony\Component\Intl\Intl;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
 use Symfony\Component\Security\Core\Authorization\AuthorizationChecker;
-use Symfony\Component\Validator\Constraints\True;
+use Symfony\Component\Validator\Constraints\IsTrue;
 
 class BookingNewType extends AbstractType implements TranslationContainerInterface
 {
@@ -142,7 +142,7 @@ class BookingNewType extends AbstractType implements TranslationContainerInterfa
                 array(
                     'label' => 'listing.form.tac',
                     'mapped' => false,
-                    'constraints' => new True(
+                    'constraints' => new IsTrue(
                         array(
                             "message" => self::$tacError
                         )
